@@ -742,3 +742,240 @@ a:focus {
     display: flex;
     padding: 2% 2%;
 }
+
+
+/*---blogs in section--*/
+
+.section-background {
+    background-image: url("../images/quan-cafe-banh-ha-noi-2\ 1.png");
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.side-blogs {
+    background-color: #FEEFEE;
+    width: 100%;
+}
+
+.blogs-title {
+    font-family: Great Vibes;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 80px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 5% 0 0 0;
+}
+
+.title-side {
+    position: relative;
+    font-family: Great Vibes;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5% 0 5% 0;
+    margin: 0 50px;
+}
+
+.title-side h3 {
+    border: 7px solid #8DDFFF;
+    padding: 10px;
+}
+
+.side-control-detail {
+    margin: 0 50px;
+}
+
+.side-detail-blog img {
+    width: 100%;
+    height: 100%;
+    margin: 20%;
+}
+
+.space-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side-control-title-detail {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 49px;
+    color: #000000;
+}
+
+.time-side-control {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    /* identical to box height, or 135% */
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.content-side-control {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    /* or 135% */
+    /* paragraph color */
+    color: #2E2E2E;
+}
+
+.side-detail-blog::after {
+    content: "";
+    position: relative;
+    width: 1340px;
+    left: 50%;
+    height: 2.5px;
+    background-color: #FFD0DC;
+    margin: 0 auto;
+    display: block;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-55%);
+}
+
+
+/*---about us section--*/
+
+.about-background {
+    background-image: url("../images/image\ 115.png");
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.background-about-us {
+    background-color: #FEEFEE;
+    position: relative;
+    width: 100%;
+}
+
+.background-tmp {
+    position: relative;
+    padding: 5% 0;
+}
+
+.background-image-ab {
+    position: absolute;
+    height: 633px;
+    width: 376px;
+    border: 15px solid #8DDFFF;
+    box-sizing: border-box;
+}
+
+.image-ab img {
+    position: relative;
+    transform: translate(10%, 10%);
+    z-index: 9;
+}
+
+.title-detail-about-us {
+    font-family: Great Vibes;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 80px;
+    color: #000000;
+}
+
+.detail-story-us {
+    padding-top: 40%;
+}
+
+.title-team-our {
+    font-family: Great Vibes;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 80px;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*--team member--*/
+
+.team-image {
+    position: relative;
+}
+
+.team-image img {
+    position: relative;
+    z-index: 9;
+}
+
+.team-image-content {
+    position: absolute;
+    background-color: #FFD0DC;
+    width: 373px;
+    height: 464px;
+    transform: translate(20%, 20%);
+}
+
+.member-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 27px;
+    /* identical to box height, or 67% */
+    color: #000000;
+}
+
+.position-member {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 27px;
+    /* identical to box height, or 112% */
+    color: #000000;
+    padding: 5% 0;
+}
+
+.deatil-member {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    /* or 135% */
+    /* paragraph color */
+    color: #2E2E2E;
+}
+
+.icon-face-ins-member {
+    width: 30%;
+    padding: 30% 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.space-member-side {
+    padding: 10% 0;
+}
