@@ -1,0 +1,46 @@
+.font-style{
+    margin: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 62px;
+    padding: 3% 0 0 0;
+    color: #000000;
+}
+
+.body-Read{
+    padding-top: 50px;
+    background-color: #FEEFEE;
+}
+.img-back{
+    padding-left: 120px;
+}
+.bottom-register{
+    margin-left: -11px;
+    color: red;
+    margin-bottom: -5px;
+    font-weight: bold;
+}
+.label-custom{
+    text-align: right;
+}
+.input-custom{
+    border: 3px solid #3D5A98;
+    background-color: #FEEFEE;
+    width: 710px;
+}
+.checkBox{
+    outline: 3px solid #3D5A98;;
+}
+.btn_Submit{
+    background-color: #1997CA;
+    border-color: #1997CA;
+    width: 140px;
+    color: #fff;
+    border-radius: 8px;
+}
+.row-check{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
