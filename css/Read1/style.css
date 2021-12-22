@@ -1,5 +1,6 @@
 .body-Read{
     padding-top: 50px;
+    background-color: #FEEFEE;
 }
 .img-back{
     padding-left: 120px;
@@ -17,4 +18,41 @@
 }
 .cake-read1{
     padding-top: 20px;
+}
+.content-cake{
+    padding-top: 50px;
+}
+.Lates-post{
+    margin-top: 80px;
+    margin-left: 30px;
+}
+.item-lates-post{
+    padding-top: 40px;
+}
+.p-top-50{
+    padding-top: 50px;
+}
+.p-left-15{
+    padding-left: 15px;
+}
+.line{
+    border-top: 2px solid #3D5A98;
+    width: 552px;
+    margin-right: 0px;
+}
+.p-top-100{
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.btn_Submit{
+    background-color: #1997CA;
+    border-color: #1997CA;
+    width: 140px;
+    color: #fff;
+    border-radius: 8px;
+}
+.text-comment{
+    border: none;
+    background-color: #FFEFDD;
+    box-shadow: 0 3px 4px -1px grey;
 }
