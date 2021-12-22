@@ -523,7 +523,7 @@ a:focus {
 }
 
 .map_section .map_container {
-    height: 375px;
+    height: 575px;
     overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -532,6 +532,7 @@ a:focus {
     -ms-flex-align: stretch;
     align-items: stretch;
     padding: 0;
+    background-color: #FEEFEE;
 }
 
 .map_section .map_container .map {
@@ -639,3 +640,105 @@ a:focus {
 
 
 /*# sourceMappingURL=style.css.map */
+
+
+/*contact-uss.css*/
+
+.area-nav-mid-menu {
+    background-color: #FEEFEE;
+    position: relative;
+}
+
+.contact-us-main {
+    background-color: #FEEFEE;
+    height: 700px;
+    width: 100vw;
+    position: relative;
+}
+
+.side-contact {
+    position: relative;
+    top: 20%;
+}
+
+.contact-title {
+    font-family: Great Vibes;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 80px;
+    color: #000000;
+}
+
+.form-detail input {
+    border: none;
+    border-bottom: 2px solid #8DDFFF;
+    background-color: #FEEFEE;
+    width: 100%;
+    margin: 3% 0;
+}
+
+.form-detail input[type=text]:focus {
+    outline: none;
+}
+
+.form-detail button {
+    position: relative;
+    float: right;
+    width: 156px;
+    height: 57.17px;
+    margin: 60px 0;
+    border: 1px solid #347792;
+    background-color: #1997CA;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.form-detail button:hover {
+    color: #1997CA;
+    background-color: #FEEFEE;
+}
+
+
+/*end contact form*/
+
+.side-infor-contact {
+    background-color: #FEEFEE;
+    height: 500px;
+    width: 100%;
+}
+
+.main-rectangle {
+    position: absolute;
+    height: 450px;
+    width: 621px;
+    right: 40px;
+    background-color: #1F799D;
+}
+
+.ltr {
+    width: 40px;
+    height: 40px;
+    background-color: #46C6F6;
+}
+
+.side-content-main-rectangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -70%);
+    width: 60%;
+    height: 50%;
+}
+
+.side-content-main-rectangle h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content-main-rectangle {
+    display: flex;
+    padding: 2% 2%;
+}
