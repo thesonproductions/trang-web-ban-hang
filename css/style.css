@@ -165,7 +165,7 @@ a:focus {
     position: absolute;
     left: 55px;
     top: 0px;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Great Vibes', cursive !important;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
@@ -262,7 +262,7 @@ a:focus {
 }
 
 .slider_section .detail_box h1 {
-    font-family: Great Vibes;
+    font-family: Great Vibes !important;
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
@@ -662,7 +662,7 @@ a:focus {
 }
 
 .contact-title {
-    font-family: Great Vibes;
+    font-family: Great Vibes !important;
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
