@@ -1,3 +1,10 @@
+@font-face {
+    font-family: textgyreadventor;
+    src: url(../../fonts/tex-gyre-adventor/texgyreadventor-regular.otf);
+}
+*{
+    font-family: textgyreadventor !important;
+}
 .body-Read{
     padding-top: 50px;
     background-color: #FEEFEE;

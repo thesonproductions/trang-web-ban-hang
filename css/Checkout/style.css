@@ -1,0 +1,67 @@
+@font-face {
+    font-family: textgyreadventor;
+    src: url(../../fonts/tex-gyre-adventor/texgyreadventor-regular.otf);
+}
+*{
+    font-family: textgyreadventor !important;
+}
+.font-style{
+    margin: auto;
+    font-style: normal;
+    font-family: textgyreadventor;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 62px;
+    padding: 3% 0 0 0;
+    color: #000000;
+}
+
+.body-Read{
+    padding-top: 50px;
+    background-color: #FEEFEE;
+}
+.hero_area{
+    background-image: url(../../images/Group442.png) !important;
+}
+.w-400{
+    max-width: 400px;
+}
+.w-976{
+    max-width: 976px;
+}
+.p-top-15{
+    padding-top: 15px;
+}
+.checkBox{
+    outline: 3px solid #3D5A98;
+    float: right;
+    margin-top: 20px;
+}
+.Payment-method{
+    border-bottom: 1px solid #3D5A98;
+    font-size: 32px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Payment-method-bottom{
+    font-size: 32px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Payment{
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+.btn_Submit{
+    float: right;
+    background-color: #B7546C;
+    border-color: #B7546C;
+    color: #fff;
+    border-radius: 7px;
+    width: 160px;
+    margin-bottom: 150px;
+}

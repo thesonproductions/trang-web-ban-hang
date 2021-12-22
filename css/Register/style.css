@@ -1,3 +1,10 @@
+@font-face {
+    font-family: textgyreadventor;
+    src: url(../../fonts/tex-gyre-adventor/texgyreadventor-regular.otf);
+}
+*{
+    font-family: textgyreadventor !important;
+}
 .font-style{
     margin: auto;
     font-style: normal;
@@ -31,7 +38,7 @@
     width: 710px;
 }
 .checkBox{
-    outline: 3px solid #3D5A98;;
+    outline: 3px solid #3D5A98;
 }
 .btn_Submit{
     background-color: #1997CA;
