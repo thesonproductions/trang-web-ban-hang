@@ -15,7 +15,9 @@
     padding: 3% 0 0 0;
     color: #000000;
 }
-
+.img-back{
+    padding-left: 120px;
+}
 .body-Read{
     padding-top: 50px;
     background-color: #FEEFEE;
