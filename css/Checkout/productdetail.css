@@ -1,0 +1,79 @@
+.borderType{
+    border: 6px solid #8DDFFF;
+}
+.typePick{
+    padding-top: 20px;
+}
+.Type{
+    padding-bottom: 40px;
+}
+.chosesType{
+    margin-right: 25px;
+}
+.rating{
+    position: relative;
+    margin-top: -6px !important;
+    right: 420px;
+}
+.btn-qty{
+    color: #fff;
+    background-color: #1997CA;
+    width: 80px;
+    height: 80px;
+    font-size: 28px;
+    margin-left: 18px;
+
+}
+.btn-qty-plus{
+    color: #fff;
+    background-color: #1997CA;
+    position: relative;
+    top: -22px;
+    width: 35px;
+    height: 35px;
+}
+.btn-qty-apart{
+    color: #fff;
+    background-color: #1997CA;
+    position: relative;
+    top: 22px;
+    left: -41px;
+    width: 35px;
+    height: 35px;
+}
+.btn:hover {
+    color: #fff !important;
+}
+.btn-add{
+    color: #fff;
+    background-color: #1997CA;
+    width: 200px;
+    height: 80px;
+}
+.btn-size{
+    border: 1px solid #3D5A98;
+    margin-left: 20px;
+}
+.btn-size-pcik{
+    border: 1px solid #9A1B47 !important;
+}
+.btn-size:hover {
+    color: #000 !important;
+}
+.text-comment{
+    border: none;
+    background-color: #FFEFDD;
+    box-shadow: 0 3px 4px -1px grey;
+}
+.btn_Submit_Cmt{
+    background-color: #1997CA;
+    border-color: #1997CA;
+    width: 140px;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.p-top-100{
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
