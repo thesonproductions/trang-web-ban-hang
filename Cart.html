@@ -25,9 +25,7 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/Checkout/style.css" rel="stylesheet" />
-    <link href="css/Menu/rating-star.css" rel="stylesheet" />
-    <link href="css/Checkout/productdetail.css" rel="stylesheet" />
-    
+    <link href="css/cart.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
     <!--slick slider-->
@@ -122,69 +120,85 @@
         <!-- end slider section -->
     </div>
     <div class="container-fluid body-Read">
-        <a href="#">
-            <img src="/images/Read1/right 2back.png" class="img-back" alt="">
-        </a>
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-xs-5 col-lg-5 col-sm-5">
-                    <img class="Type" src="images/menu/cakesocola.png" alt="" width="450">
-                    <h3>
-                        Type
-                    </h3>
-                    <div class="typePick">
-                        <img class="chosesType borderType" src="images/menu/cakesocola.png" alt="" width="80">
-                        <img class="chosesType" src="images/menu/strawberry cake.png" alt="" width="80">
-                    </div>
-                </div>
-                <div class="col-md-7 col-xs-7 col-lg-7 col-sm-7">
-                    <h3 style="font-weight: 700;">
-                        Strawberry Cake
-                        <a href="#">
-                            <img style="margin-left: 360px;" src="images/menu/close.png" alt="">
-                        </a>
-                    </h3>
-                    <h4 style="font-weight: 700;">
-                        <span>24$</span> 
-                        <span>
-                            <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                            </div>
-                        </span>
-                    </h4>
-                    <div>
-                        <p style="font-size: 20px;">
-                            Lorem ipsum dolor sit amet, ei impetus epicurei his, ne falli erant consequuntur est. Mei simul aperiam eu, an rebum regione ponderum mel.
-                        </p>
-                    </div>
-                    <div class="row">
-                        <div class="quatyti">
-                            <button class="btn btn-qty">1</button>
-                            <button class="btn btn-qty-plus">+</button>
-                            <button class="btn btn-qty-apart">-</button>
-                        </div>
-                        <div>
-                            <button class="btn btn-add"> ADD TO CART</button>
-                            <button class="btn btn-add"> BUY NOW </button>
-                        </div>
-                    </div>
-                    <div class="row" style="margin-top: 30px;">
-                        <span style="margin-left: 18px;">Size: </pan>
-                        <button class="btn btn-size btn-size-pcik"> 20x20 cm</button>
-                        <button class="btn btn-size"> 25x25 cm </button>
-                        <button class="btn btn-size"> 30x30 cm </button>
-                    </div>
-                </div>
-            </div>
-            <div class="row p-top-100">
-                <div class="col-md-7 col-xs-7 col-lg-7 col-sm-7">
-                    <p style="font-size: 24px; font-weight: 700;">
-                        LEAVE A COMMENT
-                    </p>
-                    <textarea class="text-comment" name="" id="" cols="80" rows="5" placeholder="Messenger"></textarea>
-                    <br>
-                    <button type="button" class="btn btn_Submit_Cmt">
-                        Submit
-                    </button>
+                <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
+                    <h1 class="font-style">
+                        YOUR SHOPPING CART
+                    </h2>
+                    <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col" style="width: 20%;">Infomation of product</th>
+                              <th scope="col"></th>
+                              <th scope="col">Size</th>
+                              <th scope="col">Quantity</th>
+                              <th scope="col">Unit price</th>
+                              <th scope="col"></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                  <img src="images/menu/cakesocola.png" alt="" width="150">
+                              </td>
+                              <td>
+                                  Chocolate cake
+                                </td>
+                              <td>20x20 cm</td>
+                              <td>
+                                <div class="number-input md-number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                  </div>
+                                </td>
+                              <td>24$</td>
+                              <td>
+                                <a href="#">
+                                    <img src="images/menu/close.png" alt="">
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <img src="images/menu/strawberry cake.png" alt="" width="150">
+                              </td>
+                              <td>
+                                  Strawberry cake
+                              </td>
+                              <td>20x20 cm</td>
+                              <td>
+                                <div class="number-input md-number-input">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                  </div>
+                              </td>
+                              <td>48$</td>
+                              <td>
+                                  <a href="#">
+                                    <img src="images/menu/close.png" alt="">
+                                </a>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="totalPayment">Total payment</td>
+                                <td class="totalPayment">48$</td>
+                                <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="upadteCart">
+                        <input type="text" class="btn input-voucher" placeholder="Voucher code" name="" id="">
+                        <button class="btn btn-voucher">APPLY VOUCHER</button>
+                        <button class="btn btn-update">UPDATE CART</button>
+                      </div>
+                      <div class="checkoutCart">
+                        <button class="btn btn-checkout">Check out</button>
+                      </div>
                 </div>
             </div>
         </div>
@@ -356,12 +370,6 @@
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 3,
-    });
-    $( ".chosesType" ).click(function() {
-        var scrimg = $(this).attr('src');
-        $('.Type').attr('src', scrimg);
-        $('.chosesType').removeClass('borderType');
-        $(this).addClass('borderType');
     });
 </script>
 
