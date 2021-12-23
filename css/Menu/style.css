@@ -20,7 +20,115 @@
 }
 .location{
     background-color: #1997CA;
-    border-radius: 8px;
+    border-radius: 14px;
     text-align: center;
     color: #fff;
+    width: 180px;
+    height: 28px;
+    font-weight: 600;
+}
+.body-Read{
+    padding-top: 150px;
+    background-color: #FEEFEE;
+}
+.location .img-location{
+    float: left;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+.location .img-arrow{
+    float: right;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.Fiter{
+    padding-top: 20px;
+}
+.well{
+    background-color: #FFFFFF;
+    border: 1px solid #F7F7F0;
+    border-radius: 4px;
+    box-shadow: none;
+    margin-bottom: 20px;
+    min-height: 20px;
+    padding: 35px;
+}
+.btn-filter{
+    background-color: #1997CA !important;
+    color: #fff;
+    border-color: #1997CA !important;
+    width: 76px;
+    font-size: 14px;
+    height: 33px;
+}
+.list-group-item {
+    border: none !important;
+    background-color: #FEEFEE;
+}
+.search-icon{
+    position: relative;
+    top: -34px;
+    left: 153px;
+}
+.item-left-padding{
+    padding-top: 20px;
+}
+.text-footer-left h1{
+    font-family: Great Vibes !important;
+}
+.text-footer-left {
+    position: relative;
+    top: 127px;
+    left: 12px;
+}
+.text-footer-left h2{
+    font-size: 22px !important;
+    padding-left: 16px;
+}
+.products{
+    margin-bottom: 62px;
+}
+.show-item{
+    margin-bottom: 40px;
+}
+.products p{
+    margin-top: 20px;
+}
+.products img{
+    padding-top: 10px;
+}
+.addcart{
+    position: relative;
+    left: 43px;
+    display: none;
+}
+.searchcart{
+    float: right;
+    position: relative;
+    right: 36px;
+    display: none;
+}
+.add-to-cart{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.products:hover  .searchcart{
+    display: block;
+    top: -64px;
+}
+.products:hover  .addcart{
+    display: block;
+}
+.products:hover {
+    background-color: #fff;
+}
+.products:hover  .heart{
+    display: block;
+}
+.heart{
+    position: relative;
+    top: -213px;
+    float: right;
+    right: -4px;
+    display: none;
 }
