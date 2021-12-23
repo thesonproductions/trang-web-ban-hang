@@ -1,0 +1,130 @@
+table td{
+    vertical-align: middle !important;
+    font-size: 24px;
+}
+table th{
+    color: #B7546C;
+    font-size: 19px;
+}
+.totalPayment{
+    padding-top: 20px;
+    font-size: 27px;
+    padding-top: 38px !important;
+}
+.btn-voucher{
+    background-color: #B7546C;
+    color: #fff;
+    border-radius: 4px;
+    height: 41px;
+}
+.btn-voucher:hover {
+    color: #fff;
+}
+.input-voucher{
+    border: 2px solid #B7546C;
+    text-align: left !important;
+}
+.btn-update{
+    background-color: #B7546C;
+    color: #fff;
+    border-radius: 4px;
+    height: 41px;
+    float: right;
+    width: 180px;
+}
+.btn-update:hover {
+    color: #fff;
+}
+.btn-checkout{
+    background-color: #B7546C;
+    color: #fff;
+    border-radius: 8px;
+    height: 60px;
+    float: right;
+    width: 250px;
+    font-size: 24px;
+}
+.btn-checkout:hover {
+    color: #fff;
+}
+.checkoutCart{
+    margin-top: 110px;
+    padding-bottom: 90px;
+}
+input[type="number"] {
+    -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+  }
+  .number-input button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+  }
+  .number-input button:before,
+  .number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+  }
+  .number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  .number-input input[type=number] {
+    text-align: center;
+  }
+  
+  
+  .md-number-input.number-input {
+    border: 2px solid #3D5A98;
+    border-radius: 4px;
+    width: 158px;
+    height: 40px;
+  }
+  .md-number-input.number-input button {
+    outline: none;
+    width: 3rem;
+    height: 2rem;
+    position: relative;
+    top: -12px;
+  }
+  .md-number-input.number-input button.minus {
+    padding-left: 8px;
+  }
+  .md-number-input.number-input button.plus {
+    padding-left: 2px;
+  }
+  .md-number-input.number-input button:before,
+  .md-number-input.number-input button:after {
+    width: 1rem;
+    background-color: #212121;
+  }
+  .md-number-input.number-input input[type=number] {
+    max-width: 44px;
+    max-height: 36px;;
+    padding: .5rem;
+    border: solid #3D5A98;
+    border-width: 0 2px;
+    font-size: 2rem;
+    height: 3rem;
+    outline: none;
+    background-color: #FEEFEE;
+  }
+  @media not all and (min-resolution:.001dpcm)
+  { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .number-input.md-number-input.safari_only button:before, 
+    .number-input.md-number-input.safari_only button:after {
+      margin-top: -.6rem;
+    }
+  }}
