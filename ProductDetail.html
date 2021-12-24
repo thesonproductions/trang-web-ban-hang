@@ -363,6 +363,22 @@
         $('.chosesType').removeClass('borderType');
         $(this).addClass('borderType');
     });
+    $('.btn-qty-plus').click(function() {
+        var Quatity = $('.btn-qty').html();
+        var QuatityPlus = parseInt(Quatity) + 1;
+        $('.btn-qty').html(QuatityPlus);
+    });
+    $('.btn-qty-apart').click(function() {
+        var Quatity = $('.btn-qty').html();
+        if(Quatity != 0){
+            var QuatityPlus = parseInt(Quatity) - 1;
+            $('.btn-qty').html(QuatityPlus);
+        }
+    });
+    $('.btn-size').click(function() {
+        $('.btn-size-pcik').removeClass('btn-size-pcik');
+        $(this).addClass('btn-size-pcik');
+    })
 </script>
 
 </html>
