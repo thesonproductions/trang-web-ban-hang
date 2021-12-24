@@ -62,7 +62,7 @@
                                     <a class="nav-link font-nav-link" href="blogs.html"> Blog </a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link font-nav-link" href="about.html">about us</a>
+                                    <a class="nav-link font-nav-link" href="about.html">About Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link font-nav-link" href="contact-us.html">Contact</a>
@@ -108,7 +108,7 @@
                                 Poco Pastry offers the best cakes and sweets for you
                             </p>
                             <div>
-                                <a href="">Shop now</a>
+                                <a href="MenuCafe.html">Shop now</a>
                             </div>
                         </div>
                     </div>
@@ -512,7 +512,7 @@
                         </h5>
                         <div class="infor-footer">
                             <div>
-                                About us
+                                About Us
                             </div>
                         </div>
                         <div class="infor-footer">
@@ -589,14 +589,13 @@
             </div>
         </div>
     </section>
-
     <!-- end info_section -->
 
     <!-- footer section -->
     <footer class="container-fluid footer_section ">
         <p>
             &copy; <span id="displayYear "></span> All Rights Reserved By
-            <a href="https://html.design/ ">thesonproductions</a>
+            <a href="https://html.design/ ">tsproductions</a>
         </p>
     </footer>
     <!-- footer section -->
@@ -616,6 +615,25 @@
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 3,
+        responsive: [{
+            breakpoint: 1430,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        }, {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
     });
 </script>
 
