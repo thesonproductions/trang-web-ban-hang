@@ -47,15 +47,15 @@
         </div>
         <div class="row background-login">
             <div class="form-login">
-                <form action="#">
-                    <input type="text" placeholder="Email Access"></br>
+                <form action="#" id="login">
+                    <input type="email" name="email" id="email" placeholder="Email Address"></br>
                     <div>
-                        <input type="text" placeholder="Enter Password">
+                        <input type="password" name="password" id="password" placeholder="Enter Password">
                         <div class="forgot-pass">
                             <a href="">Forgot your password?</a>
                         </div>
                     </div>
-                    <button type="submit" class="side-button">LOG IN</button>
+                    <button type="submit" id="submitbtn" class="side-button">LOG IN</button>
                     <div class="content-forgot">
                         <div class="forgot-ct">
                             Don’t have an account?
@@ -74,8 +74,45 @@
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap ">
     </script>
-    <!-- End Google Map -->
+    <script type="text/javascript " src="js/jquery.validate.min.js"></script>
+    <script>
+        $.validator.addMethod("validatePassword", function (value, element) {
+            return this.optional(element) || /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}$/i.test(value);
+        }, "Hãy nhập password từ 8 đến 16 ký tự bao gồm chữ hoa, chữ thường và ít nhất một chữ số");
+        $.validator.addMethod("regex", function(value, element, regexp)  {
+                if (regexp && regexp.constructor != RegExp) {
+                regexp = new RegExp(regexp);
+                }
+                else if (regexp.global) regexp.lastIndex = 0;
+                return this.optional(element) || regexp.test(value);
+            }
+        );
+        $("#login").validate({
+        rules: {
+        email: {
+            required: true,
+            email: true,
+            regex: /^\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+        },
+        password: {
+            required: true,
+            validatePassword: true,
+        }
+        },
 
+        messages: {
+        password: {
+            required: "Please provide a password"
+        },
+        email: "Please enter a valid email address"
+        },
+
+        submitHandler: function(form) {
+        form.submit();
+        }
+    });
+    </script>
+    <!-- End Google Map -->
 </body>
 
 </html>

@@ -88,3 +88,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+label.error {
+    color: red!important;
+ }
+ 
