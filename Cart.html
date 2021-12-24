@@ -149,12 +149,17 @@
                                         <td>20x20 cm</td>
                                         <td>
                                             <div class="number-input md-number-input">
-                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus clickQuantity"></button>
                                                 <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus clickQuantity"></button>
                                             </div>
                                         </td>
-                                        <td>24$</td>
+                                        <td>
+                                            <div>
+                                                <input type="hidden" class="UnitPrice" value="24">
+                                                24 <span>$</span>
+                                            </div>
+                                        </td>
                                         <td>
                                             <a href="#">
                                                 <img src="images/menu/close.png" alt="">
@@ -171,12 +176,17 @@
                                         <td>20x20 cm</td>
                                         <td>
                                             <div class="number-input md-number-input">
-                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus clickQuantity"></button>
                                                 <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus clickQuantity"></button>
                                             </div>
                                         </td>
-                                        <td>48$</td>
+                                        <td>
+                                            <div>
+                                            <input type="hidden" class="UnitPrice" value="48">
+                                                48 <span>$</span>
+                                            </div> 
+                                        </td>
                                         <td>
                                             <a href="#">
                                                 <img src="images/menu/close.png" alt="">
@@ -185,7 +195,7 @@
                                     </tr>
                                     <tr>
                                         <td colspan="4" class="totalPayment">Total payment</td>
-                                        <td class="totalPayment">48$</td>
+                                        <td><span class="totalPaymentPrice"></span><span>$</span> </td>
                                         <td></td>
                                     </tr>
                                 </tbody>
@@ -370,6 +380,22 @@
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 3,
+    });
+    $(document).ready(function() {
+        var UnitPrice = $('.UnitPrice').map((_,el) => el.value).get();
+        var Quantity = $('.quantity').map((_,el) => el.value).get();
+        var Total1 = parseInt(Quantity[0]) * parseInt(UnitPrice[0]);
+        var Total2 = parseInt(Quantity[1]) * parseInt(UnitPrice[1]);
+        var totalPayment = Total1 + Total2;
+        $('.totalPaymentPrice').html(totalPayment);
+        $( ".clickQuantity" ).click(function() {
+            var UnitPrice = $('.UnitPrice').map((_,el) => el.value).get();
+            var Quantity = $('.quantity').map((_,el) => el.value).get();
+            var Total1 = parseInt(Quantity[0]) * parseInt(UnitPrice[0]);
+            var Total2 = parseInt(Quantity[1]) * parseInt(UnitPrice[1]);
+            var totalPayment = Total1 + Total2;
+            $('.totalPaymentPrice').html(totalPayment);
+        });
     });
 </script>
 
