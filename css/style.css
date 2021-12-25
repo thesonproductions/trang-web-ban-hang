@@ -206,6 +206,64 @@ a:focus {
 }
 
 
+/**nav-menu**/
+
+.side-menu-item {
+    display: none;
+}
+
+.shop-menu-item:hover>.side-menu-item {
+    display: block;
+}
+
+.side-menu-item {
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 944px;
+    right: 0;
+    z-index: 99;
+}
+
+.side-menu-item h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 31px;
+    /* identical to box height */
+    color: #B7546C;
+}
+
+.side-menu-item p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #484848;
+}
+
+.menu-shop {
+    margin: 2%;
+}
+
+.dash-dot::before {
+    content: "";
+    position: absolute;
+    height: 90%;
+    border: 1px solid #8DDFFF;
+    left: 85%;
+    top: 3%;
+}
+
+.dash-dot-v2::before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    border: 1px solid #8DDFFF;
+    left: 76%;
+    top: 15%;
+}
+
+
 /*end header section*/
 
 
