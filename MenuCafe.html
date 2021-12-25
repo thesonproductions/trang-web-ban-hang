@@ -234,7 +234,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/cakesocola.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Chocolate cake
@@ -252,7 +253,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/strawberry tart.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Strawberry tart
@@ -270,7 +272,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/cup cake.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Cup cake
@@ -288,7 +291,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/cream puff pie.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Cream puff pie
@@ -306,7 +310,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/Untitled.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 macaron
@@ -324,7 +329,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/pudding.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Chocolate pudding
@@ -342,7 +348,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/mango tart.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Mango tart
@@ -360,7 +367,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/strawberry cake.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Strawberry cake
@@ -378,7 +386,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/plan.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Plan
@@ -396,7 +405,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/puding.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Vanila pudding
@@ -414,7 +424,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/cream pull.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Cream puff
@@ -432,7 +443,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/tiramisu ake.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Tiramisu cake
@@ -624,6 +636,15 @@
         slidesToShow: 3,
         slidesToScroll: 3,
     });
+    $('.like').click(function() {
+        $('.like').addClass('hidden');
+        $('.unlike').removeClass('hidden');
+    });
+    $('.unlike').click(function() {
+        $('.unlike').addClass('hidden');
+        $('.like').removeClass('hidden');
+    });
+    
 </script>
 
 </html>

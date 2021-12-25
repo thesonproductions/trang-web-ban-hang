@@ -234,7 +234,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/gelato.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Gelato ice cream
@@ -252,7 +253,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/frozen custard.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 frozen custard
@@ -270,7 +272,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/soft server.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Soft server
@@ -288,7 +291,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/kemdau.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Strawberry ice cream
@@ -306,7 +310,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/frozen yogurt.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Frozen yogurt
@@ -324,7 +329,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/chocolat ice crem.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Chocolate ice cream
@@ -342,7 +348,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/gelato.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Gelato ice cream
@@ -360,7 +367,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/frozen custard.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 frozen custard
@@ -378,7 +386,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/soft server.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Soft server
@@ -396,7 +405,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/kemdau.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Strawberry ice cream
@@ -414,7 +424,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/frozen yogurt.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Frozen yogurt
@@ -432,7 +443,8 @@
                         <div class="col-md-4 col-xs-4 col-lg-4 col-sm-4 products">
                             <img src="images/menu/chocolat ice crem.png" width="262">
                             <div class="heart">
-                                <img src="images/menu/tim1.png">
+                                <img class="like" src="images/menu/tim1.png">
+                                <img class="unlike hidden" src="images/menu/tim2.png">
                             </div>
                             <p>
                                 Chocolate ice cream
@@ -623,6 +635,14 @@
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 3,
+    });
+    $('.like').click(function() {
+        $('.like').addClass('hidden');
+        $('.unlike').removeClass('hidden');
+    });
+    $('.unlike').click(function() {
+        $('.unlike').addClass('hidden');
+        $('.like').removeClass('hidden');
     });
 </script>
 
