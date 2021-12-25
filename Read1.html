@@ -25,6 +25,7 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/Read1/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/login/style-login.css">
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
     <!--slick slider-->
@@ -75,19 +76,58 @@
                             </form>
                             <ul class="navbar-nav">
                                 <li class="icon-boot">
-                                    <img src="images/Frame.png" alt="">
+                                    <a href="Cart.html"><img src="images/Frame.png" alt=""></a>
                                 </li>
                                 <li class="icon-boot">
-                                    <img src="images/user.png" alt="">
+                                    <button style="border: none;" id="user-icon"><img src="images/user.png" alt="" id="login-side"></button>
+                                    <div class="login-re">
+                                        <div class="side-login-re">
+                                            <button id="loginBtn">Login</button></br>
+                                            <a href="Register.html"><button>Register</button></a>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="icon-boot">
                                     <img src="images/heart.png" alt="">
                                 </li>
                             </ul>
                         </div>
-                        <!-- <div class="quote_btn-container ">
-
-                        </div> -->
+                        <div class="side-log">
+                            <div class="side-login" style="z-index: 999;">
+                                <div class="row background-login">
+                                    <div class="logo-login">
+                                        <img src="images/Group 49.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="row background-login">
+                                    <div class="title-login">
+                                        <div class="content">
+                                            Great to have you back!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row background-login">
+                                    <div class="form-login">
+                                        <form action="#" id="login">
+                                            <input type="email" name="email" id="email" placeholder="Email Address"></br>
+                                            <div>
+                                                <input type="password" name="password" id="password" placeholder="Enter Password">
+                                                <div class="forgot-pass">
+                                                    <a href="">Forgot your password?</a>
+                                                </div>
+                                            </div>
+                                            <button type="submit" id="submitbtn" class="side-button">LOG IN</button>
+                                            <div class="content-forgot">
+                                                <div class="forgot-ct" style="padding: 0;">
+                                                    Don’t have an account?
+                                                    <a href="" style=" font-style: normal; font-weight: normal; font-size: 14px; line-height: 20px; color: #686868;">Register now</a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -486,7 +526,7 @@
     <footer class="container-fluid footer_section ">
         <p>
             &copy; <span id="displayYear "></span> All Rights Reserved By
-            <a href="https://html.design/ ">thesonproductions</a>
+            <a href="https://html.design/ ">tsproductions</a>
         </p>
     </footer>
     <!-- footer section -->
@@ -500,13 +540,56 @@
     </script>
     <!-- End Google Map -->
 
+    <script type="text/javascript " src="js/jquery.validate.min.js"></script>
+    <script>
+        $.validator.addMethod("validatePassword", function(value, element) {
+            return this.optional(element) || /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}$/i.test(value);
+        }, "Hãy nhập password từ 8 đến 16 ký tự bao gồm chữ hoa, chữ thường và ít nhất một chữ số");
+        $.validator.addMethod("regex", function(value, element, regexp) {
+            if (regexp && regexp.constructor != RegExp) {
+                regexp = new RegExp(regexp);
+            } else if (regexp.global) regexp.lastIndex = 0;
+            return this.optional(element) || regexp.test(value);
+        });
+        $("#login").validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true,
+                    regex: /^\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+                },
+                password: {
+                    required: true,
+                    validatePassword: true,
+                }
+            },
+
+            messages: {
+                password: {
+                    required: "Please provide a password"
+                },
+                email: "Please enter a valid email address"
+            },
+
+            submitHandler: function(form) {
+                form.submit();
+            }
+        });
+    </script>
+    <!-- End Google Map -->
+
 </body>
-<script>
-    $('.slider-menu').slick({
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-    });
+<script type="text/javascript">
+    var btn = document.querySelector("#login-side");
+    var navbar = document.querySelector(".login-re");
+    btn.onclick = function() {
+        navbar.classList.toggle("active");
+    }
+    var btnLogin = document.querySelector("#loginBtn");
+    var navbarLogSide = document.querySelector(".side-login");
+    btnLogin.onclick = function() {
+        navbarLogSide.classList.toggle("active");
+    }
 </script>
 
 </html>
