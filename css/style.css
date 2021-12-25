@@ -626,8 +626,7 @@ a:focus {
     text-align: left;
     padding: 5% 0;
     margin-right: 5%;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100%;
     padding: 5% 0;
 }
